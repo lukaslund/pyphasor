@@ -4,10 +4,7 @@ author:     lukas lund
 url:        https://github.com/lukaslund/pyphasor
 """
 
-from numpy import rad2deg, deg2rad, angle, exp
-
-def phasor(mag, ang):
-	return mag*exp(1j*deg2rad(ang))
+from numpy import rad2deg, angle
 
 def print_phasor(x, ID):
 	mag = abs(x)

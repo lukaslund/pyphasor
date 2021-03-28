@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
 	name='pyphasor',
@@ -6,7 +6,7 @@ setup(
 	description='Phasors in Python',
 	url='https://github.com/lukaslund/pyphasor',
 	author='Lukas Lund',
-	packages=['pyphasor'],
+	packages=find_packages(include=['pyphasor']),
 	install_requires=[
 		'numpy',
 	],
